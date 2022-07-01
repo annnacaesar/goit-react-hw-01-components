@@ -1,13 +1,49 @@
+//------------------------CSS MODULE----------------------------
+
+
+// import PropTypes from 'prop-types';
+// import { StatisticItem } from 'components/StatisticItem/StatisticItem';
+// import css from './Statistics.module.css';
+
+// export const Statistics = ({ title, stats }) => {
+// 	return (
+// 		<section className={css.statistics}>
+// 			{title && <h2 className={css.title}>{title}</h2>}
+
+// 			<ul className={css.statList}>
+// 				{stats.map(stat => (
+// 					<StatisticItem
+// 						key={stat.id}
+// 						label={stat.label}
+// 						percentage={stat.percentage}
+// 					/>
+// 				))}
+// 			</ul>
+// 		</section>
+// 	);
+// };
+
+// Statistics.propTypes = {
+// 	title: PropTypes.string,
+// 	stats: PropTypes.arrayOf(
+// 		PropTypes.shape({
+// 			id: PropTypes.string.isRequired,
+// 		})
+// 	),
+// };
+
+//------------------------WITH EMOTION----------------------------
+
 import PropTypes from 'prop-types';
 import { StatisticItem } from 'components/StatisticItem/StatisticItem';
-import css from './Statistics.module.css';
+import { StatisticsSection, StatisticsTitle, StatisticsList } from 'components/Statistics/Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
 	return (
-		<section className={css.statistics}>
-			{title && <h2 className={css.title}>{title}</h2>}
+		<StatisticsSection>
+			{title && <StatisticsTitle>{title}</StatisticsTitle>}
 
-			<ul className={css.statList}>
+			<StatisticsList>
 				{stats.map(stat => (
 					<StatisticItem
 						key={stat.id}
@@ -15,8 +51,8 @@ export const Statistics = ({ title, stats }) => {
 						percentage={stat.percentage}
 					/>
 				))}
-			</ul>
-		</section>
+			</StatisticsList>
+		</StatisticsSection>
 	);
 };
 

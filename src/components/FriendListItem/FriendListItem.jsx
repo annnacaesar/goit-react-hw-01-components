@@ -81,8 +81,3 @@ FriendListItem.propTypes = {
 
 
 
-
-
-
-
-

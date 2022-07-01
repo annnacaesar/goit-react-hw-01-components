@@ -1,50 +1,52 @@
-/* .profile{
-	margin-top: 20px;
+import styled from '@emotion/styled'
+
+export const Container = styled.div`
+margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	border: 1px solid #e6ecf3;
 	border-radius: 5px;
-}
+`;
 
-.description{
-	padding: 20px;
+export const Description = styled.div`
+padding: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
+`;
 
-.avatar{
+export const Image = styled.img`
 	margin-bottom: 20px;
 	display: block;
 	width: 100px;
 	height: auto;
   border-radius: 50%;
-}
+	`;
 
-.name{
-	margin: 0 0 10px 0;
+export const UserName = styled.p`
+margin: 0 0 10px 0;
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 700;
-} */
-
-/* .tag{
-	margin: 0 0 10px 0;
+`
+	
+export const Tag = styled.p`
+margin: 0 0 10px 0;
 	font-size: 18px;
 	color: #474545;
-} */
+	`;
 
-/* .location{
+export const Location = styled.p`
 	margin: 0;
 	font-size: 18px;
 	color: #474545;
-}  */
+`;
 
-/* .stats{
-	margin: 0;
+export const List = styled.ul`
+margin: 0;
 	padding: 0;
 	list-style: none;
 	display: flex;
@@ -52,27 +54,27 @@
 	border-top: 1px solid #e6ecf3;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
-}
+`;
 
-.stats li {
+export const Item = styled.li`
 	padding: 10px;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-} */
 
-/* .stats li:not(:last-child){
+	&:not(:last-child){
 	border-right: 1px solid #e6ecf3;
-} */
-/* 
-.label{
+}
+`;
+
+export const Label = styled.span`
 	font-size: 12px;
 	color: #474545;
 	margin-bottom: 5px;
-}
+`;
 
-.quantity{
+export const Quantity = styled.span`
 	font-size: 18px;
 	font-weight: 700;
-} */
+`;
+
